@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="videoFundo">
+        <source src="videos/fundo.webm" type="video/mp4">
+    </video>
+
+    <!-- Conteúdo sobreposto ao vídeo -->
+    <div class="conteudo d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container col-md-8 bg-white p-4 rounded">
+            <h1 class="text-center">Formulário de Cadastro</h1>
+            <form id="formulario" method="get">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="inome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inome" name="nome" placeholder="Insira seu Nome">
+                        <p id="pnome"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="icpf" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="icpf" name="cpf" placeholder="Insira seu CPF" maxlength="14">
+                        <p id="pcpf"></p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="iendereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="iendereco" name="endereco" placeholder="Insira seu Endereço">
+                        <p id="pendereco"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="dataInscricao" class="form-label">Data de Inscrição</label>
+                        <input type="date" class="form-control" id="dataInscricao" name="dataInscricao">
+                        <p id="pdataInscricao"></p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="icelular" class="form-label">Celular</label>
+                        <input type="text" class="form-control" id="icelular" name="celular" placeholder="Insira seu Número de Telefone" maxlength="15">
+                        <p id="pcelular"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="iemail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="iemail" name="email" placeholder="Insira seu E-mail">
+                        <p id="pemail"></p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="text" class="form-control" id="dataNascimento" name="dataNascimento" placeholder="Digite a data de nascimento (DD/MM/AAAA)" maxlength="10">
+                        <p id="pdataNascimento"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="objetivo" class="form-label">Seu Objetivo</label>
+                        <textarea class="form-control" id="objetivo" name="objetivo" rows="1" placeholder="Digite o Seu Objetivo na Nossa Academia"></textarea>
+                        <p id="pobjetivo"></p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Plano</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="plano" id="planoMensal" value="mensal">
+                            <label class="form-check-label" for="planoMensal">Mensal</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="plano" id="planoTrimestral" value="trimestral">
+                            <label class="form-check-label" for="planoTrimestral">Trimestral</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="plano" id="planoAnual" value="anual">
+                            <label class="form-check-label" for="planoAnual">Anual</label>
+                        </div>
+                        <p id="pplano"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Sexo</label>
+                        <div class="form-check">
+                            <input type="radio" name="sexo" value="masculino" id="masculino">
+                            <label class="form-check-label" for="masculino">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="sexo" value="feminino" id="feminino">
+                            <label class="form-check-label" for="feminino">Feminino</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="sexo" value="nao_identificar" id="nao_identificar">
+                            <label class="form-check-label" for="nao_identificar">Não desejo identificar meu sexo</label>
+                        </div>
+                        <p id="mensagemErroSexo"></p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="submit" class="btn btn-outline-primary w-100" value="Enviar" id="btnenviar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/teste.js"></script>
+</body>
+
+</html>

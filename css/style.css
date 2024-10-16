@@ -1,0 +1,72 @@
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px white;
+    color: #3c3c3c;
+}
+
+#btnenviar {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#btnenviar:hover {
+    background-image: linear-gradient(to right, rgb(141, 188, 243), rgb(210, 13, 236));
+
+   
+}
+
+/* Estilo para o vídeo de fundo */
+#videoFundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    object-fit: cover; /* Faz o vídeo cobrir toda a tela */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Garante que a página ocupe toda a altura da tela */
+}
+
+#videoFundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover; /* Garante que o vídeo preencha o espaço sem distorções */
+}
+
+.conteudo {
+    height: 100vh; /* Ocupa toda a altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body{
+    margin: 70px;
+    margin-bottom: 70px;
+}
